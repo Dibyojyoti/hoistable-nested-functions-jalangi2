@@ -1,0 +1,59 @@
+results for example.js:
+ Function ---> foo is the outer most function
+ Function ---> bar is the outer most function
+
+results for example1.js:
+ Function ---> foo is the outer most function
+ Function ---> goo under foo can be hoisted
+ Function ---> zoo under foo can not be hoisted Due to the variable a decleared under ansestor foo
+
+results for example2.js:
+ Function ---> g is the outer most function
+ Function ---> f is the outer most function
+
+results for example3.js:
+ Function ---> f is the outer most function
+ Function ---> g under f can be hoisted
+
+results for example4.js:
+ Function ---> f is the outer most function
+ Function ---> g under f can be hoisted
+ Function ---> h under f can be hoisted
+
+results for example5.js:
+ Function ---> f is the outer most function
+ Function ---> g under f can be hoisted
+ Function ---> h under f can be hoisted
+
+results for example6.js:
+ Function ---> f is the outer most function
+ Function ---> g under f can not be hoisted because one of its child is non hoistable
+ Function ---> h under g can not be hoisted Due to the variable y decleared under ansestor f
+
+results for example7.js:
+ Function ---> add is the outer most function
+ Function ---> addB under add can not decide if hoistable
+ Function ---> add5 under add can be hoisted
+
+results for example8.js:
+ Function ---> add1 is the outer most function
+ Function ---> add2 is the outer most function
+ Function ---> add1B under add1 can be hoisted
+ Function ---> add15 under add1 can not be hoisted Due to the variable b decleared under ansestor add1
+ Function ---> add2B under add2 can not be hoisted Due to the variable b decleared under ansestor add2
+ Function ---> add25 under add2 can be hoisted
+
+results for example9.js:
+ Function ---> f1 is the outer most function
+ Function ---> f2 is the outer most function
+ Function ---> g under f1 can not be hoisted Due to the variable y decleared under ansestor f1
+ Function ---> h1 under f1 can be hoisted
+ Function ---> g under f2 can not be hoisted Due to the variable y decleared under ansestor f2
+ Function ---> h under f2 can be hoisted
+
+results for example10.js:
+ Function ---> fLevel1 is the outer most function
+ Function ---> fLevel2 under fLevel1 can be hoisted
+ Function ---> fLevel3 under fLevel2 can not be hoisted because one of its child is non hoistable
+ Function ---> fLevel4 under fLevel3 can not be hoisted Due to the variable z decleared under ansestor fLevel2
+

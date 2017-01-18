@@ -1,0 +1,8 @@
+
+ Function ---> func under  can not decide if hoistable
+ Function ---> behavior under  can not decide if hoistable
+ Function ---> predicateFind under  can not decide if hoistable
+ Function ---> sortedIndex under  can not decide if hoistable
+ Function ---> keysFunc under  can not decide if hoistable
+ Function ---> iteratee under  can not decide if hoistable
+ Function ---> obj under  can not decide if hoistable
